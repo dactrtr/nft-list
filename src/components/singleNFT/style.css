@@ -1,0 +1,44 @@
+.nft_card{
+ display: flex;
+ flex-direction: column;
+ background: rgba(228, 242, 248, 0.8);
+ border-radius: 24px;
+ flex: 0 0 48%;
+}
+@media (min-width: 425px) {
+    .nft_card{
+        flex: 0 0 24%;
+    }
+    
+ }
+.nft_card .nft_image{
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+}
+.nft_info{
+ padding: 8px;
+ margin-bottom: 8px;
+}
+.nft_card .nft_info .nft_title{
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+.nft_card .nft_info .nft_id{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+.nft_card .nft_info .nft_prices{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nft_card .nft_info .nft_prices .nft_prices-fiat{
+    width: 50%;
+    text-align: left;
+}
+.nft_card .nft_info .nft_prices .nft_prices-crypto{
+    width: 50%;
+    text-align: right;
+}
